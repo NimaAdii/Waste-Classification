@@ -66,3 +66,6 @@ The img.py script captures images from the camera, classifies them using a pre-t
 Start the Arduino system to initiate the hardware components.
 Run the Python script to start the image classification and sorting process.
 The system will classify and sort objects as they are placed on the conveyor belt.
+
+![Picture1](https://github.com/user-attachments/assets/c1716ee6-e2ba-4c0f-adeb-385849575401)
+
