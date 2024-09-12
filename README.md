@@ -1,8 +1,6 @@
-The development of a Smart Waste Management System incorporating an Image Classification unit running on a Raspberry Pi 4 B single-board computer. The system utilizes a conveyor belt with actuators, sensors, and an Arduino microcontroller board to transfer waste to the correct bin. Additionally, a compressing and sealing unit, controlled by the same Arduino microcontroller board, is connected to the Raspberry Pi via a serial connection. This unit is capable for compressing waste and sealing the corresponding waste collection bag.
 
 # Automatic Garbage Sorting System
-
-This project focuses on designing an automatic garbage sorting system using a conveyor belt, ultrasonic sensors, stepper motors, servo motors, and a deep learning-based image classification model. The system identifies different types of waste and sorts them accordingly.
+The development of a Smart Waste Management System incorporating an Image Classification unit running on a Raspberry Pi 4 B single-board computer. The system utilizes a conveyor belt with actuators, sensors, and an Arduino microcontroller board to transfer waste to the correct bin. Additionally, a compressing and sealing unit, controlled by the same Arduino microcontroller board, is connected to the Raspberry Pi via a serial connection. This unit is capable for compressing waste and sealing the corresponding waste collection bag.
 
 ## Table of Contents
 
@@ -15,8 +13,6 @@ This project focuses on designing an automatic garbage sorting system using a co
 - [Image Classification Model](#image-classification-model)
 - [Setup and Installation](#setup-and-installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -53,3 +49,20 @@ The automatic garbage sorting system uses an image classification model to ident
 ### Compressing and Sealing
 
 The `CompressingAndSealing.ino` script controls the compressing and sealing process using stepper motors, servo motors, and relays.
+
+### Conveyor Belt Control
+The 'ConveyorBelt.ino' script handles the movement of the conveyor belt, object detection using ultrasonic sensors, and sending commands to the image classification system.
+
+## Image Classification Model
+The img.py script captures images from the camera, classifies them using a pre-trained deep learning model, and communicates with the Arduino system.
+
+## Setup and Installation
+1. Arduino: Upload the Arduino codes to the Arduino Uno using the Arduino IDE.
+2. Python Environment: Set up Python 3.x and required libraries (TensorFlow, OpenCV) using pip install -r requirements.txt.
+3. Model: Place the imageclassifier.h5 model file in the specified location on your device.
+4. Camera: Ensure the camera is correctly connected and accessible.
+
+## Usage
+Start the Arduino system to initiate the hardware components.
+Run the Python script to start the image classification and sorting process.
+The system will classify and sort objects as they are placed on the conveyor belt.
