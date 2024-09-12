@@ -1,5 +1,5 @@
 
-# Automatic Garbage Sorting System
+# Enhancing Waste Management with CNN-based Recycling Automation
 The development of a Smart Waste Management System incorporating an Image Classification unit running on a Raspberry Pi 4 B single-board computer. The system utilizes a conveyor belt with actuators, sensors, and an Arduino microcontroller board to transfer waste to the correct bin. Additionally, a compressing and sealing unit, controlled by the same Arduino microcontroller board, is connected to the Raspberry Pi via a serial connection. This unit is capable for compressing waste and sealing the corresponding waste collection bag.
 
 ## Table of Contents
